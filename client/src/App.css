@@ -1,0 +1,249 @@
+/* Import Poppins and Inter fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Basic App Layout */
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Tabs Styling */
+.tabs-container {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  border-radius: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #718096;
+  font-size: 1rem;
+}
+
+.tab:hover {
+  background: #F5F5F5;
+  color: #4A5568;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #F7DDE2 0%, #BEE3F8 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 15px rgba(190, 227, 248, 0.3);
+}
+
+/* Filter Select */
+.filter-select {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #F5F5F5;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  background: white;
+  color: #4A5568;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #DDD6FE;
+  box-shadow: 0 0 0 3px rgba(221, 214, 254, 0.3);
+}
+
+/* Insight Card */
+.insight-card {
+  background: linear-gradient(135deg, #C0F2D8 0%, #BEE3F8 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 8px 20px rgba(192, 242, 216, 0.3);
+}
+
+.insight-emoji {
+  font-size: 2rem;
+}
+
+.insight-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Chart Card */
+.chart-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.chart-card h3 {
+  margin-bottom: 1.5rem;
+  color: #2D3748;
+}
+
+/* Mood Distribution */
+.mood-distribution {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.mood-flowers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.mood-flower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.flower-emoji {
+  transition: transform 0.3s ease;
+}
+
+.flower-emoji:hover {
+  transform: scale(1.2);
+}
+
+.flower-count {
+  font-weight: 700;
+  color: #4A5568;
+  font-size: 1.2rem;
+}
+
+.flower-label {
+  font-size: 0.9rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+  }
+  
+  .mood-flowers {
+    gap: 1rem;
+  }
+  
+  .mood-flower {
+    width: calc(50% - 1rem);
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+/* Center alignment utilities */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-horizontal {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Flex centering */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grid centering */
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+/* Page wrapper */
+.page-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Section centering */
+.section-center {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Card centering in grid */
+.grid-auto-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding: 0 1rem;
+  }
+  
+  .grid-auto-center {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

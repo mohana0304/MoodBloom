@@ -44,7 +44,7 @@
   
 | Dashboard | Mood Tracker | Recipe Box | Goal Setting |
 |-----------|--------------|------------|--------------|
-| ![Dashboard](./dashboard.png)![Mood Tracker](./emotiontracker.png) | ![Recipe Box](./recipebox.png) | ![Goal Setting](./goal.png) |
+| ![Dashboard](./dashboard.png)|![Mood Tracker](./emotiontracker.png) | ![Recipe Box](./recipebox.png) | ![Goal Setting](./goal.png) |
 
 </div>
 
